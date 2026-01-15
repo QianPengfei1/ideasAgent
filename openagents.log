@@ -1,0 +1,623 @@
+Using workspace directory (derived from config): C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Loaded network configuration from network.yaml
+Initializing WorkspaceManager at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized successfully at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentManager initialized for workspace: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 5 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.default
+Successfully loaded network mod: openagents.mods.workspace.default
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+Initializing network mod openagents.mods.workspace.wiki
+Initializing Wiki network mod
+Wiki mod initialization complete (storage-first mode)
+Successfully loaded network mod: openagents.mods.workspace.wiki
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.workspace.project
+Initializing Project network mod
+Loaded template: research_ideas_generation
+Loaded template: idea_refinement
+Project mod initialized with 2 templates
+Successfully loaded network mod: openagents.mods.workspace.project
+Could not import network mod demos.09_research_ideas_network.mods.evaluation: No module named 'demos'
+Mod openagents.mods.workspace.default bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.default
+Mod openagents.mods.workspace.wiki bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.wiki
+Mod openagents.mods.workspace.messaging bound to network research-ideas-network-1
+Using file storage at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\mods\openagents.mods.workspace.messaging\files
+Initialized channels: ['ideas-discussion', 'idea-generation', 'idea-review']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.workspace.project bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.project
+Successfully loaded 4 network mods
+Created network: ResearchIdeasNetwork
+Loaded 4 network mods: ['openagents.mods.workspace.default', 'openagents.mods.workspace.wiki', 'openagents.mods.workspace.messaging', 'openagents.mods.workspace.project']
+Workspace path: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized with 3 mod directories
+HTTP transport: MCP protocol enabled at /mcp
+HTTP transport: Studio frontend enabled at /studio
+HTTP transport: Studio build directory found at C:\1\tool\Anaconda\envs\SAM\Lib\site-packages\openagents\studio\build
+HTTP transport listening on 0.0.0.0:8709
+Started TransportType.HTTP transport on 0.0.0.0:8709
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8609
+Started TransportType.GRPC transport on 0.0.0.0:8609
+Successfully loaded mod adapter: openagents.mods.workspace.default
+Successfully loaded mod adapter: openagents.mods.workspace.wiki
+Successfully loaded mod adapter: openagents.mods.workspace.messaging
+Successfully loaded mod adapter: openagents.mods.workspace.project
+Collected 36 total tools
+HTTP transport MCP: Collected 36 tools: ['send_event', 'create_wiki_page', 'edit_wiki_page', 'get_wiki_page', 'search_wiki_pages', 'list_wiki_pages', 'propose_wiki_page_edit', 'list_wiki_edit_proposals', 'resolve_wiki_edit_proposal', 'get_wiki_page_history', 'revert_wiki_page_version', 'send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message', 'list_project_templates', 'start_project', 'stop_project', 'complete_project', 'get_project', 'send_project_message', 'set_project_global_state', 'get_project_global_state', 'list_project_global_state', 'delete_project_global_state', 'set_project_agent_state', 'get_project_agent_state', 'list_project_agent_state', 'delete_project_agent_state', 'set_project_artifact', 'get_project_artifact', 'list_project_artifacts', 'delete_project_artifact']
+Centralized topology initialized with 2 transports
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\leader_agent.yaml: 'gbk' codec can't decode byte 0xa8 in position 4936: illegal multibyte sequence
+Discovered 8 agents
+AgentManager started with 8 discovered agents
+Agent network 'ResearchIdeasNetwork' initialized successfully
+Network 'ResearchIdeasNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8709
+Transport TransportType.GRPC: 0.0.0.0:8609
+Network statistics: {'network_id': 'research-ideas-network-1', 'network_uuid': 'e5b8a4d4-f6c6-402c-a0bb-67bc4f382169', 'network_name': 'ResearchIdeasNetwork', 'initialized': True, 'is_running': True, 'uptime_seconds': 0.00555872917175293, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'admin', 'description': 'Administrator agents with full permissions', 'agent_count': 0, 'metadata': {'permissions': ['all']}, 'has_password': True}, {'name': 'coordinators', 'description': 'Leader agent that coordinates the research ideas generation process', 'agent_count': 0, 'metadata': {'permissions': ['create_projects', 'delegate_tasks', 'communicate_with_users', 'select_ideas'], 'agents': ['leader']}, 'has_password': True}, {'name': 'generators', 'description': 'Generator agents that create research ideas from different perspectives', 'agent_count': 0, 'metadata': {'permissions': ['generate_ideas', 'send_events'], 'agents': ['domain_agent', 'method_agent', 'cross_domain_agent', 'application_agent', 'trend_agent']}, 'has_password': True}, {'name': 'critics', 'description': 'Critic agents that evaluate ideas from different dimensions', 'agent_count': 0, 'metadata': {'permissions': ['review_ideas', 'send_events'], 'agents': ['technical_critic', 'impact_critic']}, 'has_password': True}, {'name': 'refiners', 'description': 'Refinement agent that improves and consolidates ideas', 'agent_count': 0, 'metadata': {'permissions': ['refine_ideas', 'send_events'], 'agents': ['refinement_agent']}, 'has_password': True}, {'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.default', 'enabled': True, 'config': {'custom_events_enabled': True}}, {'name': 'openagents.mods.workspace.wiki', 'enabled': True, 'config': {'max_pages': 1000}}, {'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'ideas-discussion', 'description': 'Main channel for discussing research ideas'}, {'name': 'idea-generation', 'description': 'Channel for idea generation announcements'}, {'name': 'idea-review', 'description': 'Channel for idea reviews and critiques'}], 'max_thread_depth': 5, 'thread_collapse_threshold': 10}}, {'name': 'openagents.mods.workspace.project', 'enabled': True, 'config': {'max_concurrent_projects': 5, 'project_templates': {'research_ideas_generation': {'name': 'Research Ideas Generation', 'description': 'Generate and evaluate research ideas using multiple agents', 'agent_groups': ['coordinators', 'generators', 'critics', 'refiners'], 'context': 'Research Ideas Generation Workflow\n\nThis workflow coordinates multiple specialized agents to generate and evaluate research ideas:\n\n1. Leader receives research domain/topic from user\n2. Leader delegates generation tasks to 5 generator agents:\n   - Domain Agent: Deep dive into the given domain\n   - Method Agent: Ideas from methodological perspective\n   - Cross-domain Agent: Ideas from adjacent domains\n   - Application Agent: Ideas focused on applications\n   - Trend Agent: Ideas based on recent trends\n3. Generator agents produce ideas in parallel\n4. Leader collects all generated ideas\n5. Leader delegates review tasks to 2 critic agents:\n   - Technical Critic: Evaluates technical feasibility\n   - Impact Critic: Evaluates research impact\n6. Critic agents review ideas and provide feedback\n7. Leader delegates refinement task to Refinement Agent\n8. Refinement Agent merges similar ideas and improves clarity\n9. Evaluation Mod scores refined ideas on 3 dimensions:\n   - Novelty (1-10)\n   - Feasibility (1-10)\n   - Impact (1-10)\n10. Leader selects top-K ideas and presents to user\n\nIdea Structure:\n{\n  "title": "Research Idea Title",\n  "problem": "Problem statement",\n  "core_idea": "Core innovation",\n  "why_interesting": "Why this is interesting",\n  "potential_method": "Proposed methodology",\n  "challenges": "Potential challenges"\n}\n'}, 'idea_refinement': {'name': 'Idea Refinement', 'description': 'Refine and consolidate research ideas', 'agent_groups': ['coordinators', 'refiners'], 'context': 'Idea Refinement Workflow\n\nThis workflow focuses on improving generated ideas:\n\n1. Receive generated ideas and critic feedback\n2. Identify similar or overlapping ideas\n3. Merge related ideas into consolidated versions\n4. Apply critic feedback to improve clarity\n5. Enhance feasibility descriptions\n6. Output refined ideas ready for evaluation\n'}}}}, {'name': 'demos.09_research_ideas_network.mods.evaluation', 'enabled': True, 'config': {'evaluation_dimensions': [{'name': 'novelty', 'description': 'How novel and innovative is the idea', 'weight': 1.0, 'min_score': 1, 'max_score': 10}, {'name': 'feasibility', 'description': 'How feasible is the idea to implement', 'weight': 1.0, 'min_score': 1, 'max_score': 10}, {'name': 'impact', 'description': 'What potential impact could this research have', 'weight': 1.0, 'min_score': 1, 'max_score': 10}]}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'port': 8709, 'serve_studio': True, 'serve_mcp': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'port': 8609, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 60000, 'keepalive_timeout': 30000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 15, 'readme': '# Research Ideas Generation Network\n\nA multi-agent system for generating and evaluating research ideas using OpenAgents framework. This system coordinates specialized agents to produce high-quality research proposals through collaborative workflows.\n\n## Overview\n\nThe Research Ideas Generation Network uses a collaborative multi-agent approach to:\n- Generate diverse research ideas from multiple perspectives\n- Evaluate ideas based on technical feasibility and impact\n- Refine and consolidate ideas based on feedback\n- Score and rank ideas for final selection\n\n## Architecture\n\n### Agent Types\n\n1. **Leader Agent** (`leader_agent.yaml`)\n   - Coordinates the entire idea generation process\n   - Delegates tasks to other agents\n   - Controls workflow progression\n   - Presents final results to users\n\n2. **Generator Agents** (5 specialized agents)\n   - **Domain Agent**: Deep dive into the given research domain\n   - **Method Agent**: Ideas from methodological perspective\n   - **Cross-Domain Agent**: Ideas from adjacent domains\n   - **Application Agent**: Ideas focused on practical applications\n   - **Trend Agent**: Ideas based on recent trends\n\n3. **Critic Agents** (2 specialized agents)\n   - **Technical Critic**: Evaluates technical feasibility and soundness\n   - **Impact Critic**: Evaluates potential impact and significance\n\n4. **Refinement Agent** (`refinement_agent.py`)\n   - Merges similar ideas\n   - Improves clarity based on critic feedback\n   - Consolidates overlapping concepts\n\n5. **Evaluation Mod** (`mods/evaluation/mod.py`)\n   - Multi-criteria evaluation of research ideas\n   - Scoring based on technical feasibility, impact, novelty, relevance, and clarity\n   - Ranking and selection of top ideas\n   - Detailed evaluation reports\n\n## Workflow\n\n1. User provides a research domain or topic\n2. Leader delegates generation tasks to all 5 generator agents\n3. Generator agents produce ideas in parallel\n4. Leader collects all generated ideas\n5. Leader delegates review tasks to 2 critic agents\n6. Critic agents review ideas and provide feedback\n7. Leader delegates refinement task to Refinement Agent\n8. Refinement Agent improves and consolidates ideas\n9. Evaluation Mod scores refined ideas on multiple dimensions\n10. Leader selects top-K ideas and presents to user\n\n## Installation\n\n### Prerequisites\n\n- Python 3.8+\n- OpenAgents framework installed\n- Network access to OpenAgents server\n\n### Setup\n\n1. Clone or navigate to the network directory:\n```bash\ncd demos/09_research_ideas_network\n```\n\n2. Ensure all agent files are in place:\n```\ndemos/09_research_ideas_network/\n├── network.yaml\n├── agents/\n│   ├── leader_agent.yaml\n│   ├── domain_agent.yaml\n│   ├── method_agent.yaml\n│   ├── cross_domain_agent.yaml\n│   ├── application_agent.yaml\n│   ├── trend_agent.yaml\n│   ├── technical_critic.yaml\n│   ├── impact_critic.yaml\n│   └── refinement_agent.py\n└── mods/\n    └── evaluation/\n        ├── __init__.py\n        └── mod.py\n```\n\n## Usage\n\n### Starting the Network\n\nStart the network server:\n\n```bash\nopenagents network start --config network.yaml\n```\n\nThe network will start on:\n- HTTP: `http://localhost:8709`\n- gRPC: `localhost:8609`\n\n### Starting Agents\n\n#### Starting YAML-based Agents\n\nStart each agent in a separate terminal:\n\n```bash\n# Leader Agent\nopenagents agent start --config agents/leader_agent.yaml --network http://localhost:8709 --password 123456\n\n# Domain Agent\nopenagents agent start --config agents/domain_agent.yaml --network http://localhost:8709 --password 123456\n\n# Method Agent\nopenagents agent start --config agents/method_agent.yaml --network http://localhost:8709 --password 123456\n\n# Cross-Domain Agent\nopenagents agent start --config agents/cross_domain_agent.yaml --network http://localhost:8709 --password 123456\n\n# Application Agent\nopenagents agent start --config agents/application_agent.yaml --network http://localhost:8709 --password 123456\n\n# Trend Agent\nopenagents agent start --config agents/trend_agent.yaml --network http://localhost:8709 --password 123456\n\n# Technical Critic\nopenagents agent start --config agents/technical_critic.yaml --network http://localhost:8709 --password 123456\n\n# Impact Critic\nopenagents agent start --config agents/impact_critic.yaml --network http://localhost:8709 --password 123456\n```\n\n#### Starting Python-based Agents\n\nStart the Refinement Agent:\n\n```bash\npython agents/refinement_agent.py\n```\n\n### Using the System\n\nOnce all agents are connected, interact with the Leader Agent to generate research ideas:\n\n1. Send a direct message to the Leader Agent with your research domain/topic\n2. The system will automatically:\n   - Generate ideas from multiple perspectives\n   - Evaluate ideas for technical feasibility and impact\n   - Refine and consolidate ideas\n   - Score and rank the ideas\n3. Receive the top-K research ideas with detailed evaluations\n\nExample interaction:\n```\nUser: I want to generate research ideas in the field of federated learning for healthcare\nLeader: I\'ll coordinate the generation of research ideas on federated learning for healthcare. Let me delegate tasks to our specialized agents...\n[... agents work in parallel ...]\nLeader: Here are the top 5 research ideas for federated learning in healthcare:\n1. [Idea 1 with score and details]\n2. [Idea 2 with score and details]\n...\n```\n\n## Configuration\n\n### Network Configuration\n\nEdit `network.yaml` to customize:\n- Network ports (HTTP: 8709, gRPC: 8609)\n- Agent groups and permissions\n- Mod configurations\n- Project templates\n\n### Agent Configuration\n\nEdit individual agent YAML files to customize:\n- Model selection\n- Instructions and behavior\n- Max iterations\n- Response patterns\n\n### Evaluation Configuration\n\nEdit the evaluation mod configuration in `network.yaml` to adjust:\n- Evaluation dimensions (novelty, feasibility, impact)\n- Weights for each dimension\n- Score ranges\n\n## Project Templates\n\nThe system includes two project templates:\n\n### Research Ideas Generation\n\nMain workflow for generating and evaluating research ideas with all agents participating.\n\n### Idea Refinement\n\nFocused workflow for refining and consolidating existing ideas.\n\n## Data Structure\n\n### Research Idea Format\n\n```json\n{\n  "title": "Research Idea Title",\n  "problem": "Problem statement",\n  "core_idea": "Core innovation",\n  "why_interesting": "Why this is interesting",\n  "potential_method": "Proposed methodology",\n  "challenges": "Potential challenges"\n}\n```\n\n### Evaluation Result Format\n\n```json\n{\n  "idea_id": "unique_id",\n  "idea_title": "Idea Title",\n  "scores": {\n    "technical_feasibility": 8.5,\n    "impact": 9.0,\n    "novelty": 7.5,\n    "relevance": 8.0,\n    "clarity": 9.0\n  },\n  "total_score": 8.4,\n  "strengths": ["Excellent impact", "Good technical feasibility"],\n  "weaknesses": ["Moderate novelty"],\n  "recommendations": ["Consider incorporating more innovative elements"]\n}\n```\n\n## Troubleshooting\n\n### Agents Not Connecting\n\n- Verify the network is running: `openagents network status`\n- Check network URL and port in agent configurations\n- Ensure passwords match between network and agents\n\n### Ideas Not Generated\n\n- Verify all generator agents are connected\n- Check Leader Agent logs for delegation errors\n- Ensure agent groups have correct permissions\n\n### Evaluation Not Working\n\n- Verify Evaluation Mod is loaded: Check network logs\n- Check mod configuration in `network.yaml`\n- Ensure mod path is correct: `demos.09_research_ideas_network.mods.evaluation`\n\n## Development\n\n### Adding New Generator Agents\n\n1. Create a new YAML file in `agents/` directory\n2. Follow the structure of existing generator agents\n3. Add the agent to the `generators` agent group in `network.yaml`\n4. Update Leader Agent instructions to include the new agent\n\n### Modifying Evaluation Criteria\n\nEdit the `evaluation_criteria` dictionary in `mods/evaluation/mod.py`:\n\n```python\nself.evaluation_criteria = {\n    "technical_feasibility": {"weight": 0.25, "description": "..."},\n    "impact": {"weight": 0.30, "description": "..."},\n    # Add or modify criteria here\n}\n```\n\n### Customizing Workflow\n\nModify the project templates in `network.yaml` to change the workflow steps, agent participation, or idea structure.\n\n## License\n\nThis project is part of the OpenAgents framework.\n\n## Contributing\n\nContributions are welcome! Please submit issues and pull requests to the OpenAgents repository.', 'network_profile': {'discoverable': True, 'name': 'Research Ideas Generator', 'description': 'A multi-agent system for generating and evaluating research ideas. Uses specialized generators, critics, and refinement to produce high-quality research proposals.', 'tags': ['research', 'ideas', 'multi-agent', 'collaboration', 'innovation'], 'categories': ['research', 'collaboration'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 15, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8709}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 60s, timeout: 300s)
+127.0.0.1 [10/Jan/2026:23:26:18 +0800] "GET / HTTP/1.1" 200 6684 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:19 +0800] "GET /favicon.ico HTTP/1.1" 200 15799 "http://localhost:8709/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:21 +0800] "GET /studio/ HTTP/1.1" 200 1283 "http://localhost:8709/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:21 +0800] "GET /static/js/main.f257f68b.js HTTP/1.1" 200 6861944 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:21 +0800] "GET /static/css/main.43952e92.css HTTP/1.1" 200 296065 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:22 +0800] "GET /static/media/openagents-logo-trans-white.a6c057257062292b9333.png HTTP/1.1" 200 360127 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:22 +0800] "GET /api/health HTTP/1.1" 200 15551 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:22 +0800] "GET /api/health HTTP/1.1" 200 15550 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:22 +0800] "GET /manifest.json HTTP/1.1" 200 703 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:29 +0800] "GET /api/health HTTP/1.1" 200 15551 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:29 +0800] "GET /api/health HTTP/1.1" 200 15550 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:29 +0800] "GET /api/health HTTP/1.1" 200 15550 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:29 +0800] "GET /api/health HTTP/1.1" 200 15550 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+HTTP Agent registration: ideas
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+HTTP Agent unregistration: ideas
+Unregistered agent ideas from centralized registry
+Unregistered agent ideas from network
+Unregistered agent ideas from Wiki mod
+Unregistered agent ideas from Thread Messaging protocol
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "POST /api/unregister HTTP/1.1" 200 426 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15551 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15550 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /media/avatars/300-2.png HTTP/1.1" 404 173 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /static/media/open-agents-logo.4da489289b77ef395eeb.png HTTP/1.1" 200 1079028 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15551 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15551 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15551 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+HTTP Agent registration: ideas
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15692 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15692 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15691 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15691 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15691 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:26:36 +0800] "GET /api/health HTTP/1.1" 200 15690 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:37:18 +0800] "GET / HTTP/1.1" 200 6685 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:37:18 +0800] "GET / HTTP/1.1" 200 6685 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:26 +0800] "GET /studio/ HTTP/1.1" 200 1283 "http://localhost:8709/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:27 +0800] "GET /api/health HTTP/1.1" 200 15207 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:27 +0800] "GET /api/health HTTP/1.1" 200 15209 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:27 +0800] "GET /manifest.json HTTP/1.1" 200 703 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:32 +0800] "GET /api/health HTTP/1.1" 200 15209 "http://localhost:8709/studio/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:32 +0800] "GET /api/health HTTP/1.1" 200 15209 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:32 +0800] "GET /api/health HTTP/1.1" 200 15209 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:32 +0800] "GET /api/health HTTP/1.1" 200 15208 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+HTTP Agent unregistration: ideas
+Unregistered agent ideas from centralized registry
+Unregistered agent ideas from network
+Unregistered agent ideas from Wiki mod
+Unregistered agent ideas from Thread Messaging protocol
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "POST /api/unregister HTTP/1.1" 200 426 "http://localhost:8709/studio/agent-setup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "GET /api/health HTTP/1.1" 200 15069 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "GET /media/avatars/300-2.png HTTP/1.1" 404 173 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "GET /api/health HTTP/1.1" 200 15069 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "GET /api/health HTTP/1.1" 200 15068 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "GET /api/health HTTP/1.1" 200 15068 "http://localhost:8709/studio" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "GET /api/health HTTP/1.1" 200 15069 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+HTTP Agent registration: ideas
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:38:33 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:34 +0800] "GET /api/health HTTP/1.1" 200 15210 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:34 +0800] "GET /api/health HTTP/1.1" 200 15210 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:34 +0800] "GET /api/health HTTP/1.1" 200 15210 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:34 +0800] "GET /api/health HTTP/1.1" 200 15210 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:34 +0800] "GET /api/health HTTP/1.1" 200 15210 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:38:34 +0800] "GET /api/health HTTP/1.1" 200 15210 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:38:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:38:56 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:39:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:39:56 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:40:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:41:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:42:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:43:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:44:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+127.0.0.1 [10/Jan/2026:23:45:12 +0800] "GET /api/health HTTP/1.1" 200 15211 "-" "Python/3.11 aiohttp/3.9.0"
+Agent registration: refinement_agent
+Agent refinement_agent provided invalid credentials, assigning to 'guest' group
+Registered agent refinement_agent in centralized registry (group: guest)
+Registering agent refinement_agent with Wiki mod
+Successfully registered agent refinement_agent with Wiki mod
+Registered agent refinement_agent with network in group 'guest'
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:45:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:45:57 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:46:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:47:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:48:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:49:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:50:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:51:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:52:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:53:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:54:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:55:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:56:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:57:55 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Invalid secret provided for agent ideas
+HTTP Agent registration: ideas
+Agent ideas already registered with network
+Unregistered agent ideas from centralized registry
+Agent ideas assigned to default group 'guest'
+Registered agent ideas in centralized registry (group: guest)
+Registering agent ideas with Wiki mod
+Successfully registered agent ideas with Wiki mod
+Registered agent ideas with network in group 'guest'
+127.0.0.1 [10/Jan/2026:23:58:47 +0800] "POST /api/register HTTP/1.1" 200 592 "http://localhost:8709/studio/readme" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0"
+Using workspace directory (derived from config): C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Loaded network configuration from network.yaml
+Initializing WorkspaceManager at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized successfully at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentManager initialized for workspace: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 5 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.default
+Successfully loaded network mod: openagents.mods.workspace.default
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+Initializing network mod openagents.mods.workspace.wiki
+Initializing Wiki network mod
+Wiki mod initialization complete (storage-first mode)
+Successfully loaded network mod: openagents.mods.workspace.wiki
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.workspace.project
+Initializing Project network mod
+Loaded template: research_ideas_generation
+Loaded template: idea_refinement
+Project mod initialized with 2 templates
+Successfully loaded network mod: openagents.mods.workspace.project
+Could not import network mod openagents.mods.research_ideas_evaluation: No module named 'openagents.mods.research_ideas_evaluation'
+Mod openagents.mods.workspace.default bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.default
+Mod openagents.mods.workspace.wiki bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.wiki
+Mod openagents.mods.workspace.messaging bound to network research-ideas-network-1
+Using file storage at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\mods\openagents.mods.workspace.messaging\files
+Initialized channels: ['leader', 'discussion']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.workspace.project bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.project
+Successfully loaded 4 network mods
+Created network: ResearchIdeasNetwork
+Loaded 4 network mods: ['openagents.mods.workspace.default', 'openagents.mods.workspace.wiki', 'openagents.mods.workspace.messaging', 'openagents.mods.workspace.project']
+Workspace path: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized with 4 mod directories
+HTTP transport: MCP protocol enabled at /mcp
+HTTP transport: Studio frontend enabled at /studio
+HTTP transport: Studio build directory found at C:\1\tool\Anaconda\envs\SAM\Lib\site-packages\openagents\studio\build
+Failed to initialize centralized topology: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8709): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+Failed to initialize network topology
+Failed to initialize network
+Shutting down network...
+Centralized topology shutdown
+Agent network 'ResearchIdeasNetwork' shutdown successfully
+Network shutdown complete
+Using workspace directory (derived from config): C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Loaded network configuration from network.yaml
+Initializing WorkspaceManager at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized successfully at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentManager initialized for workspace: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 5 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.default
+Successfully loaded network mod: openagents.mods.workspace.default
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+Initializing network mod openagents.mods.workspace.wiki
+Initializing Wiki network mod
+Wiki mod initialization complete (storage-first mode)
+Successfully loaded network mod: openagents.mods.workspace.wiki
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.workspace.project
+Initializing Project network mod
+Loaded template: research_ideas_generation
+Loaded template: idea_refinement
+Project mod initialized with 2 templates
+Successfully loaded network mod: openagents.mods.workspace.project
+Could not import network mod openagents.mods.research_ideas_evaluation: No module named 'openagents.mods.research_ideas_evaluation'
+Mod openagents.mods.workspace.default bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.default
+Mod openagents.mods.workspace.wiki bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.wiki
+Mod openagents.mods.workspace.messaging bound to network research-ideas-network-1
+Using file storage at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\mods\openagents.mods.workspace.messaging\files
+Initialized channels: ['leader', 'discussion']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.workspace.project bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.project
+Successfully loaded 4 network mods
+Created network: ResearchIdeasNetwork
+Loaded 4 network mods: ['openagents.mods.workspace.default', 'openagents.mods.workspace.wiki', 'openagents.mods.workspace.messaging', 'openagents.mods.workspace.project']
+Workspace path: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized with 4 mod directories
+HTTP transport: MCP protocol enabled at /mcp
+HTTP transport: Studio frontend enabled at /studio
+HTTP transport: Studio build directory found at C:\1\tool\Anaconda\envs\SAM\Lib\site-packages\openagents\studio\build
+HTTP transport listening on 0.0.0.0:8709
+Started TransportType.HTTP transport on 0.0.0.0:8709
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8609
+Started TransportType.GRPC transport on 0.0.0.0:8609
+Successfully loaded mod adapter: openagents.mods.workspace.default
+Successfully loaded mod adapter: openagents.mods.workspace.wiki
+Successfully loaded mod adapter: openagents.mods.workspace.messaging
+Successfully loaded mod adapter: openagents.mods.workspace.project
+Collected 36 total tools
+HTTP transport MCP: Collected 36 tools: ['send_event', 'create_wiki_page', 'edit_wiki_page', 'get_wiki_page', 'search_wiki_pages', 'list_wiki_pages', 'propose_wiki_page_edit', 'list_wiki_edit_proposals', 'resolve_wiki_edit_proposal', 'get_wiki_page_history', 'revert_wiki_page_version', 'send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message', 'list_project_templates', 'start_project', 'stop_project', 'complete_project', 'get_project', 'send_project_message', 'set_project_global_state', 'get_project_global_state', 'list_project_global_state', 'delete_project_global_state', 'set_project_agent_state', 'get_project_agent_state', 'list_project_agent_state', 'delete_project_agent_state', 'set_project_artifact', 'get_project_artifact', 'list_project_artifacts', 'delete_project_artifact']
+Centralized topology initialized with 2 transports
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\application_agent.yaml: 'gbk' codec can't decode byte 0xae in position 316: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\cross_domain_agent.yaml: 'gbk' codec can't decode byte 0xa2 in position 311: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\domain_agent.yaml: 'gbk' codec can't decode byte 0xae in position 311: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\impact_critic.yaml: 'gbk' codec can't decode byte 0xae in position 344: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\leader_agent.yaml: 'gbk' codec can't decode byte 0xa2 in position 324: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\method_agent.yaml: 'gbk' codec can't decode byte 0xae in position 311: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\technical_critic.yaml: 'gbk' codec can't decode byte 0x80 in position 345: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\trend_agent.yaml: 'gbk' codec can't decode byte 0xae in position 310: illegal multibyte sequence
+Discovered 1 agents
+AgentManager started with 1 discovered agents
+Agent network 'ResearchIdeasNetwork' initialized successfully
+Network 'ResearchIdeasNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8709
+Transport TransportType.GRPC: 0.0.0.0:8609
+Network statistics: {'network_id': 'research-ideas-network-1', 'network_uuid': '65101291-f112-49d0-b0ce-e58ffddd51c0', 'network_name': 'ResearchIdeasNetwork', 'initialized': True, 'is_running': True, 'uptime_seconds': 0.00604557991027832, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'admin', 'description': 'Administrator agents with full permissions', 'agent_count': 0, 'metadata': {'permissions': ['all']}, 'has_password': True}, {'name': 'coordinators', 'description': 'Leader agent that coordinates the research ideas generation process', 'agent_count': 0, 'metadata': {'permissions': ['create_projects', 'delegate_tasks', 'communicate_with_users', 'select_ideas'], 'agents': ['leader']}, 'has_password': True}, {'name': 'generators', 'description': 'Generator agents that create research ideas from different perspectives', 'agent_count': 0, 'metadata': {'permissions': ['generate_ideas', 'send_events'], 'agents': ['domain_agent', 'method_agent', 'cross_domain_agent', 'application_agent', 'trend_agent']}, 'has_password': True}, {'name': 'critics', 'description': 'Critic agents that evaluate ideas from different dimensions', 'agent_count': 0, 'metadata': {'permissions': ['review_ideas', 'send_events'], 'agents': ['technical_critic', 'impact_critic']}, 'has_password': True}, {'name': 'refiners', 'description': 'Refinement agent that improves and consolidates ideas', 'agent_count': 0, 'metadata': {'permissions': ['refine_ideas', 'send_events'], 'agents': ['refinement_agent']}, 'has_password': True}, {'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.default', 'enabled': True, 'config': {'custom_events_enabled': True}}, {'name': 'openagents.mods.workspace.wiki', 'enabled': True, 'config': {'max_pages': 1000}}, {'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'leader', 'description': 'Leader agent progress updates'}, {'name': 'discussion', 'description': 'Main channel for all agents to share ideas, reviews, and results'}], 'max_thread_depth': 5, 'thread_collapse_threshold': 10}}, {'name': 'openagents.mods.workspace.project', 'enabled': True, 'config': {'max_concurrent_projects': 5, 'project_templates': {'research_ideas_generation': {'name': 'Research Ideas Generation', 'description': 'Generate and evaluate research ideas using multiple agents', 'agent_groups': ['coordinators', 'generators', 'critics', 'refiners'], 'context': 'Research Ideas Generation Workflow\n\nThis workflow coordinates multiple specialized agents to generate and evaluate research ideas:\n\n1. Leader receives research domain/topic from user\n2. Leader delegates generation tasks to 5 generator agents:\n   - Domain Agent: Deep dive into the given domain\n   - Method Agent: Ideas from methodological perspective\n   - Cross-domain Agent: Ideas from adjacent domains\n   - Application Agent: Ideas focused on applications\n   - Trend Agent: Ideas based on recent trends\n3. Generator agents produce ideas in parallel\n4. Leader collects all generated ideas\n5. Leader delegates review tasks to 2 critic agents:\n   - Technical Critic: Evaluates technical feasibility\n   - Impact Critic: Evaluates research impact\n6. Critic agents review ideas and provide feedback\n7. Leader delegates refinement task to Refinement Agent\n8. Refinement Agent merges similar ideas and improves clarity\n9. Evaluation Mod scores refined ideas on 3 dimensions:\n   - Novelty (1-10)\n   - Feasibility (1-10)\n   - Impact (1-10)\n10. Leader selects top-K ideas and presents to user\n\nIdea Structure:\n{\n  "title": "Research Idea Title",\n  "problem": "Problem statement",\n  "core_idea": "Core innovation",\n  "why_interesting": "Why this is interesting",\n  "potential_method": "Proposed methodology",\n  "challenges": "Potential challenges"\n}\n'}, 'idea_refinement': {'name': 'Idea Refinement', 'description': 'Refine and consolidate research ideas', 'agent_groups': ['coordinators', 'refiners'], 'context': 'Idea Refinement Workflow\n\nThis workflow focuses on improving generated ideas:\n\n1. Receive generated ideas and critic feedback\n2. Identify similar or overlapping ideas\n3. Merge related ideas into consolidated versions\n4. Apply critic feedback to improve clarity\n5. Enhance feasibility descriptions\n6. Output refined ideas ready for evaluation\n'}}}}, {'name': 'openagents.mods.research_ideas_evaluation', 'enabled': True, 'config': {'evaluation_dimensions': [{'name': 'novelty', 'description': 'How novel and innovative is the idea', 'weight': 1.0, 'min_score': 1, 'max_score': 10}, {'name': 'feasibility', 'description': 'How feasible is the idea to implement', 'weight': 1.0, 'min_score': 1, 'max_score': 10}, {'name': 'impact', 'description': 'What potential impact could this research have', 'weight': 1.0, 'min_score': 1, 'max_score': 10}]}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'port': 8709, 'serve_studio': True, 'serve_mcp': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'port': 8609, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 60000, 'keepalive_timeout': 30000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 15, 'readme': '# Research Ideas Generation Network\n\nA multi-agent system for generating and evaluating research ideas using OpenAgents framework. This system coordinates specialized agents to produce high-quality research proposals through collaborative workflows.\n\n## Overview\n\nThe Research Ideas Generation Network uses a collaborative multi-agent approach to:\n- Generate diverse research ideas from multiple perspectives\n- Evaluate ideas based on technical feasibility and impact\n- Refine and consolidate ideas based on feedback\n- Score and rank ideas for final selection\n\n## Architecture\n\n### Agent Types\n\n1. **Leader Agent** (`leader_agent.yaml`)\n   - Coordinates the entire idea generation process\n   - Delegates tasks to other agents\n   - Controls workflow progression\n   - Presents final results to users\n\n2. **Generator Agents** (5 specialized agents)\n   - **Domain Agent**: Deep dive into the given research domain\n   - **Method Agent**: Ideas from methodological perspective\n   - **Cross-Domain Agent**: Ideas from adjacent domains\n   - **Application Agent**: Ideas focused on practical applications\n   - **Trend Agent**: Ideas based on recent trends\n\n3. **Critic Agents** (2 specialized agents)\n   - **Technical Critic**: Evaluates technical feasibility and soundness\n   - **Impact Critic**: Evaluates potential impact and significance\n\n4. **Refinement Agent** (`refinement_agent.py`)\n   - Merges similar ideas\n   - Improves clarity based on critic feedback\n   - Consolidates overlapping concepts\n\n5. **Evaluation Mod** (`mods/evaluation/mod.py`)\n   - Multi-criteria evaluation of research ideas\n   - Scoring based on technical feasibility, impact, novelty, relevance, and clarity\n   - Ranking and selection of top ideas\n   - Detailed evaluation reports\n\n## Workflow\n\n1. User provides a research domain or topic\n2. Leader delegates generation tasks to all 5 generator agents\n3. Generator agents produce ideas in parallel\n4. Leader collects all generated ideas\n5. Leader delegates review tasks to 2 critic agents\n6. Critic agents review ideas and provide feedback\n7. Leader delegates refinement task to Refinement Agent\n8. Refinement Agent improves and consolidates ideas\n9. Evaluation Mod scores refined ideas on multiple dimensions\n10. Leader selects top-K ideas and presents to user\n\n## Installation\n\n### Prerequisites\n\n- Python 3.8+\n- OpenAgents framework installed\n- Network access to OpenAgents server\n\n### Setup\n\n1. Clone or navigate to the network directory:\n```bash\ncd demos/09_research_ideas_network\n```\n\n2. Ensure all agent files are in place:\n```\ndemos/09_research_ideas_network/\n├── network.yaml\n├── agents/\n│   ├── leader_agent.yaml\n│   ├── domain_agent.yaml\n│   ├── method_agent.yaml\n│   ├── cross_domain_agent.yaml\n│   ├── application_agent.yaml\n│   ├── trend_agent.yaml\n│   ├── technical_critic.yaml\n│   ├── impact_critic.yaml\n│   └── refinement_agent.py\n└── mods/\n    └── evaluation/\n        ├── __init__.py\n        └── mod.py\n```\n\n## Usage\n\n### Starting the Network\n\nStart the network server:\n\n```bash\nopenagents network start 09_research_ideas_network/network.yaml\n```\n\nThe network will start on:\n- HTTP: `http://localhost:8709`\n- gRPC: `localhost:8609`\n\n### Starting Agents\n\n#### Starting YAML-based Agents\n\nStart each agent in a separate terminal:\n\n```bash\n# Leader Agent\nopenagents agent start 09_research_ideas_network/agents/leader_agent.yaml\n\n# Domain Agent\nopenagents agent start 09_research_ideas_network/agents/domain_agent.yaml\n\n# Method Agent\nopenagents agent start 09_research_ideas_network/agents/method_agent.yaml\n\n# Cross-Domain Agent\nopenagents agent start 09_research_ideas_network/agents/cross_domain_agent.yaml\n\n# Application Agent\nopenagents agent start 09_research_ideas_network/agents/application_agent.yaml\n\n# Trend Agent\nopenagents agent start 09_research_ideas_network/agents/trend_agent.yaml\n\n# Technical Critic\nopenagents agent start 09_research_ideas_network/agents/technical_critic.yaml\n\n# Impact Critic\nopenagents agent start 09_research_ideas_network/agents/impact_critic.yaml\n```\n\n#### Starting Python-based Agents\n\nStart the Refinement Agent:\n\n```bash\npython 09_research_ideas_network/agents/refinement_agent.py\n```\n我需要一个步态识别的ideas\n### Using the System\n\nOnce all agents are connected, interact with the Leader Agent to generate research ideas:\n\n1. Send a direct message to the Leader Agent with your research domain/topic\n2. The system will automatically:\n   - Generate ideas from multiple perspectives\n   - Evaluate ideas for technical feasibility and impact\n   - Refine and consolidate ideas\n   - Score and rank the ideas\n3. Receive the top-K research ideas with detailed evaluations\n\nExample interaction:\n```\nUser: I want to generate research ideas in the field of federated learning for healthcare\nLeader: I\'ll coordinate the generation of research ideas on federated learning for healthcare. Let me delegate tasks to our specialized agents...\n[... agents work in parallel ...]\nLeader: Here are the top 5 research ideas for federated learning in healthcare:\n1. [Idea 1 with score and details]\n2. [Idea 2 with score and details]\n...\n```\n\n## Configuration\n\n### Network Configuration\n\nEdit `network.yaml` to customize:\n- Network ports (HTTP: 8709, gRPC: 8609)\n- Agent groups and permissions\n- Mod configurations\n- Project templates\n\n### Agent Configuration\n\nEdit individual agent YAML files to customize:\n- Model selection\n- Instructions and behavior\n- Max iterations\n- Response patterns\n\n### Evaluation Configuration\n\nEdit the evaluation mod configuration in `network.yaml` to adjust:\n- Evaluation dimensions (novelty, feasibility, impact)\n- Weights for each dimension\n- Score ranges\n\n## Project Templates\n\nThe system includes two project templates:\n\n### Research Ideas Generation\n\nMain workflow for generating and evaluating research ideas with all agents participating.\n\n### Idea Refinement\n\nFocused workflow for refining and consolidating existing ideas.\n\n## Data Structure\n\n### Research Idea Format\n\n```json\n{\n  "title": "Research Idea Title",\n  "problem": "Problem statement",\n  "core_idea": "Core innovation",\n  "why_interesting": "Why this is interesting",\n  "potential_method": "Proposed methodology",\n  "challenges": "Potential challenges"\n}\n```\n\n### Evaluation Result Format\n\n```json\n{\n  "idea_id": "unique_id",\n  "idea_title": "Idea Title",\n  "scores": {\n    "technical_feasibility": 8.5,\n    "impact": 9.0,\n    "novelty": 7.5,\n    "relevance": 8.0,\n    "clarity": 9.0\n  },\n  "total_score": 8.4,\n  "strengths": ["Excellent impact", "Good technical feasibility"],\n  "weaknesses": ["Moderate novelty"],\n  "recommendations": ["Consider incorporating more innovative elements"]\n}\n```\n\n## Troubleshooting\n\n### Agents Not Connecting\n\n- Verify the network is running: `openagents network status`\n- Check network URL and port in agent configurations\n- Ensure passwords match between network and agents\n\n### Ideas Not Generated\n\n- Verify all generator agents are connected\n- Check Leader Agent logs for delegation errors\n- Ensure agent groups have correct permissions\n\n### Evaluation Not Working\n\n- Verify Evaluation Mod is loaded: Check network logs\n- Check mod configuration in `network.yaml`\n- Ensure mod path is correct: `demos.09_research_ideas_network.mods.evaluation`\n\n## Development\n\n### Adding New Generator Agents\n\n1. Create a new YAML file in `agents/` directory\n2. Follow the structure of existing generator agents\n3. Add the agent to the `generators` agent group in `network.yaml`\n4. Update Leader Agent instructions to include the new agent\n\n### Modifying Evaluation Criteria\n\nEdit the `evaluation_criteria` dictionary in `mods/evaluation/mod.py`:\n\n```python\nself.evaluation_criteria = {\n    "technical_feasibility": {"weight": 0.25, "description": "..."},\n    "impact": {"weight": 0.30, "description": "..."},\n    # Add or modify criteria here\n}\n```\n\n### Customizing Workflow\n\nModify the project templates in `network.yaml` to change the workflow steps, agent participation, or idea structure.\n\n## License\n\nThis project is part of the OpenAgents framework.\n\n## Contributing\n\nContributions are welcome! Please submit issues and pull requests to the OpenAgents repository.', 'network_profile': {'discoverable': True, 'name': 'Research Ideas Generator', 'description': 'A multi-agent system for generating and evaluating research ideas. Uses specialized generators, critics, and refinement to produce high-quality research proposals.', 'tags': ['research', 'ideas', 'multi-agent', 'collaboration', 'innovation'], 'categories': ['research', 'collaboration'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 15, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8709}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 60s, timeout: 300s)
+Using workspace directory (derived from config): C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Loaded network configuration from network.yaml
+Initializing WorkspaceManager at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized successfully at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentManager initialized for workspace: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 4 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.default
+Successfully loaded network mod: openagents.mods.workspace.default
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+No workspace manager found, using temporary directory for storage: openagents.mods.workspace.wiki
+This mod will not be able to persist data between restarts.
+Initializing network mod openagents.mods.workspace.wiki
+Initializing Wiki network mod
+Wiki mod initialization complete (storage-first mode)
+Successfully loaded network mod: openagents.mods.workspace.wiki
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.workspace.project
+Initializing Project network mod
+Loaded template: research_ideas_generation
+Loaded template: idea_refinement
+Project mod initialized with 2 templates
+Successfully loaded network mod: openagents.mods.workspace.project
+Mod openagents.mods.workspace.default bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.default
+Mod openagents.mods.workspace.wiki bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.wiki
+Mod openagents.mods.workspace.messaging bound to network research-ideas-network-1
+Using file storage at C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\mods\openagents.mods.workspace.messaging\files
+Initialized channels: ['leader', 'discussion']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.workspace.project bound to network research-ideas-network-1
+Registered network mod: openagents.mods.workspace.project
+Successfully loaded 4 network mods
+Created network: ResearchIdeasNetwork
+Loaded 4 network mods: ['openagents.mods.workspace.default', 'openagents.mods.workspace.wiki', 'openagents.mods.workspace.messaging', 'openagents.mods.workspace.project']
+Workspace path: C:\1\file\2project\agent\openagents\demos\09_research_ideas_network
+Workspace initialized with 4 mod directories
+HTTP transport: MCP protocol enabled at /mcp
+HTTP transport: Studio frontend enabled at /studio
+HTTP transport: Studio build directory found at C:\1\tool\Anaconda\envs\SAM\Lib\site-packages\openagents\studio\build
+HTTP transport listening on 0.0.0.0:8709
+Started TransportType.HTTP transport on 0.0.0.0:8709
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8609
+Started TransportType.GRPC transport on 0.0.0.0:8609
+Successfully loaded mod adapter: openagents.mods.workspace.default
+Successfully loaded mod adapter: openagents.mods.workspace.wiki
+Successfully loaded mod adapter: openagents.mods.workspace.messaging
+Successfully loaded mod adapter: openagents.mods.workspace.project
+Collected 36 total tools
+HTTP transport MCP: Collected 36 tools: ['send_event', 'create_wiki_page', 'edit_wiki_page', 'get_wiki_page', 'search_wiki_pages', 'list_wiki_pages', 'propose_wiki_page_edit', 'list_wiki_edit_proposals', 'resolve_wiki_edit_proposal', 'get_wiki_page_history', 'revert_wiki_page_version', 'send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message', 'list_project_templates', 'start_project', 'stop_project', 'complete_project', 'get_project', 'send_project_message', 'set_project_global_state', 'get_project_global_state', 'list_project_global_state', 'delete_project_global_state', 'set_project_agent_state', 'get_project_agent_state', 'list_project_agent_state', 'delete_project_agent_state', 'set_project_artifact', 'get_project_artifact', 'list_project_artifacts', 'delete_project_artifact']
+Centralized topology initialized with 2 transports
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\application_agent.yaml: 'gbk' codec can't decode byte 0xae in position 314: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\cross_domain_agent.yaml: 'gbk' codec can't decode byte 0xa2 in position 310: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\domain_agent.yaml: 'gbk' codec can't decode byte 0xae in position 310: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\evaluation_agent.yaml: 'gbk' codec can't decode byte 0xae in position 326: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\impact_critic.yaml: 'gbk' codec can't decode byte 0xae in position 317: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\leader_agent.yaml: 'gbk' codec can't decode byte 0xa2 in position 323: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\method_agent.yaml: 'gbk' codec can't decode byte 0x80 in position 316: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\technical_critic.yaml: 'gbk' codec can't decode byte 0x80 in position 318: illegal multibyte sequence
+Error reading YAML file C:\1\file\2project\agent\openagents\demos\09_research_ideas_network\agents\trend_agent.yaml: 'gbk' codec can't decode byte 0xae in position 309: illegal multibyte sequence
+Discovered 1 agents
+AgentManager started with 1 discovered agents
+Agent network 'ResearchIdeasNetwork' initialized successfully
+Network 'ResearchIdeasNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8709
+Transport TransportType.GRPC: 0.0.0.0:8609
+Network statistics: {'network_id': 'research-ideas-network-1', 'network_uuid': 'a5694593-97d8-4a59-a2d2-6d118068e868', 'network_name': 'ResearchIdeasNetwork', 'initialized': True, 'is_running': True, 'uptime_seconds': 0.004071235656738281, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'admin', 'description': 'Administrator agents with full permissions', 'agent_count': 0, 'metadata': {'permissions': ['all']}, 'has_password': True}, {'name': 'coordinators', 'description': 'Leader agent that coordinates the research ideas generation process', 'agent_count': 0, 'metadata': {'permissions': ['create_projects', 'delegate_tasks', 'communicate_with_users', 'select_ideas'], 'agents': ['leader']}, 'has_password': True}, {'name': 'generators', 'description': 'Generator agents that create research ideas from different perspectives', 'agent_count': 0, 'metadata': {'permissions': ['generate_ideas', 'send_events'], 'agents': ['domain_agent', 'method_agent', 'cross_domain_agent', 'experiment_agent']}, 'has_password': True}, {'name': 'refiners', 'description': 'Refinement agent that improves and consolidates ideas', 'agent_count': 0, 'metadata': {'permissions': ['refine_ideas', 'send_events'], 'agents': ['refinement_agent']}, 'has_password': True}, {'name': 'evaluators', 'description': 'Evaluation agent that scores and ranks research ideas', 'agent_count': 0, 'metadata': {'permissions': ['evaluate_ideas', 'send_events'], 'agents': ['evaluation_agent']}, 'has_password': True}, {'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.default', 'enabled': True, 'config': {'custom_events_enabled': True}}, {'name': 'openagents.mods.workspace.wiki', 'enabled': True, 'config': {'max_pages': 1000}}, {'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'leader', 'description': 'Leader agent progress updates'}, {'name': 'discussion', 'description': 'Main channel for all agents to share ideas, reviews, and results'}], 'max_thread_depth': 5, 'thread_collapse_threshold': 10}}, {'name': 'openagents.mods.workspace.project', 'enabled': True, 'config': {'max_concurrent_projects': 5, 'project_templates': {'research_ideas_generation': {'name': 'Research Ideas Generation', 'description': 'Generate and evaluate research ideas using multiple agents', 'agent_groups': ['coordinators', 'generators', 'refiners', 'evaluators'], 'context': 'Research Ideas Generation Workflow\n\nThis workflow coordinates multiple specialized agents to generate and evaluate research ideas:\n\n1. Leader receives research domain/topic from user\n2. Leader delegates generation task to Domain Agent\n3. Domain Agent generates 5 research ideas\n4. Leader delegates methodology improvement to Method Agent\n5. Method Agent improves the methodology of these 5 ideas\n6. Leader delegates experimental setup to Experiment Agent\n7. Experiment Agent improves the experimental setup of these 5 ideas\n8. Leader delegates refinement task to Refinement Agent\n9. Refinement Agent checks ideas for methodology and experimental setup issues\n10. If issues found, return to relevant experts for modification (maximum 3 rounds)\n11. Once ideas pass refinement, Leader delegates to Cross-domain Agent\n12. Cross-domain Agent selects 1-3 ideas and generates cross-domain ideas\n13. Leader delegates evaluation task to Evaluation Agent\n14. Evaluation Agent scores ideas on 5 dimensions:\n   - Technical Feasibility (1-10, weight 25%)\n   - Impact (1-10, weight 30%)\n   - Novelty (1-10, weight 20%)\n   - Relevance (1-10, weight 15%)\n   - Clarity (1-10, weight 10%)\n15. Leader presents ranked ideas with detailed methodology, experimental setup, and scores to user\n\nIdea Structure:\n{\n  "title": "Research Idea Title",\n  "problem": "Problem statement",\n  "core_idea": "Core innovation",\n  "why_interesting": "Why this is interesting",\n  "methodology": "Methodology (improved by method_agent)",\n  "experimental_setup": "Experimental setup (improved by experiment_agent)",\n  "challenges": "Potential challenges"\n}\n'}, 'idea_refinement': {'name': 'Idea Refinement', 'description': 'Refine and consolidate research ideas', 'agent_groups': ['coordinators', 'refiners'], 'context': 'Idea Refinement Workflow\n\nThis workflow focuses on improving generated ideas:\n\n1. Receive generated ideas and critic feedback\n2. Identify similar or overlapping ideas\n3. Merge related ideas into consolidated versions\n4. Apply critic feedback to improve clarity\n5. Enhance feasibility descriptions\n6. Output refined ideas ready for evaluation\n'}}}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'port': 8709, 'serve_studio': True, 'serve_mcp': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'port': 8609, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 60000, 'keepalive_timeout': 30000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 15, 'readme': '# Research Ideas Generation Network\n\nA multi-agent system for generating and evaluating research ideas using OpenAgents framework. This system coordinates specialized agents to produce high-quality research proposals through collaborative workflows.\n\n## Overview\n\nThe Research Ideas Generation Network uses a collaborative multi-agent approach to:\n- Generate diverse research ideas from multiple perspectives\n- Evaluate ideas based on technical feasibility and impact\n- Refine and consolidate ideas based on feedback\n- Score and rank ideas for final selection\n\n## Architecture\n\n### Agent Types\n\n1. **Leader Agent** (`leader_agent.yaml`)\n   - Coordinates the entire idea generation process\n   - Delegates tasks to other agents\n   - Controls workflow progression\n   - Presents final results to users\n\n2. **Generator Agents** (5 specialized agents)\n   - **Domain Agent**: Deep dive into the given research domain\n   - **Method Agent**: Ideas from methodological perspective\n   - **Cross-Domain Agent**: Ideas from adjacent domains\n   - **Application Agent**: Ideas focused on practical applications\n   - **Trend Agent**: Ideas based on recent trends\n\n3. **Critic Agents** (2 specialized agents)\n   - **Technical Critic**: Evaluates technical feasibility and soundness\n   - **Impact Critic**: Evaluates potential impact and significance\n\n4. **Refinement Agent** (`refinement_agent.py`)\n   - Merges similar ideas\n   - Improves clarity based on critic feedback\n   - Consolidates overlapping concepts\n\n5. **Evaluation Mod** (`mods/evaluation/mod.py`)\n   - Multi-criteria evaluation of research ideas\n   - Scoring based on technical feasibility, impact, novelty, relevance, and clarity\n   - Ranking and selection of top ideas\n   - Detailed evaluation reports\n\n## Workflow\n\n1. User provides a research domain or topic\n2. Leader delegates generation tasks to all 5 generator agents\n3. Generator agents produce ideas in parallel\n4. Leader collects all generated ideas\n5. Leader delegates review tasks to 2 critic agents\n6. Critic agents review ideas and provide feedback\n7. Leader delegates refinement task to Refinement Agent\n8. Refinement Agent improves and consolidates ideas\n9. Evaluation Mod scores refined ideas on multiple dimensions\n10. Leader selects top-K ideas and presents to user\n\n## Installation\n\n### Prerequisites\n\n- Python 3.8+\n- OpenAgents framework installed\n- Network access to OpenAgents server\n\n### Setup\n\n1. Clone or navigate to the network directory:\n```bash\ncd demos/09_research_ideas_network\n```\n\n2. Ensure all agent files are in place:\n```\ndemos/09_research_ideas_network/\n├── network.yaml\n├── agents/\n│   ├── leader_agent.yaml\n│   ├── domain_agent.yaml\n│   ├── method_agent.yaml\n│   ├── cross_domain_agent.yaml\n│   ├── application_agent.yaml\n│   ├── trend_agent.yaml\n│   ├── technical_critic.yaml\n│   ├── impact_critic.yaml\n│   └── refinement_agent.py\n└── mods/\n    └── evaluation/\n        ├── __init__.py\n        └── mod.py\n```\n\n## Usage\n\n### Starting the Network\n\nStart the network server:\n\n```bash\nopenagents network start 09_research_ideas_network/network.yaml\n```\n\nThe network will start on:\n- HTTP: `http://localhost:8709`\n- gRPC: `localhost:8609`\n\n### Starting Agents\n\n#### Starting YAML-based Agents\n\nStart each agent in a separate terminal:\n\n```bash\n# Leader Agent\nopenagents agent start 09_research_ideas_network/agents/leader_agent.yaml\n\n# Domain Agent\nopenagents agent start 09_research_ideas_network/agents/domain_agent.yaml\n\n# Method Agent\nopenagents agent start 09_research_ideas_network/agents/method_agent.yaml\n\n# Cross-Domain Agent\nopenagents agent start 09_research_ideas_network/agents/cross_domain_agent.yaml\n\n# Application Agent\nopenagents agent start 09_research_ideas_network/agents/application_agent.yaml\n\n# Trend Agent\nopenagents agent start 09_research_ideas_network/agents/trend_agent.yaml\n\n# Technical Critic\nopenagents agent start 09_research_ideas_network/agents/technical_critic.yaml\n\n# Impact Critic\nopenagents agent start 09_research_ideas_network/agents/impact_critic.yaml\n```\n\n#### Starting Python-based Agents\n\nStart the Refinement Agent:\n\n```bash\npython 09_research_ideas_network/agents/refinement_agent.py\n```\n我需要一个步态识别的ideas\n### Using the System\n\nOnce all agents are connected, interact with the Leader Agent to generate research ideas:\n\n1. Send a direct message to the Leader Agent with your research domain/topic\n2. The system will automatically:\n   - Generate ideas from multiple perspectives\n   - Evaluate ideas for technical feasibility and impact\n   - Refine and consolidate ideas\n   - Score and rank the ideas\n3. Receive the top-K research ideas with detailed evaluations\n\nExample interaction:\n```\nUser: I want to generate research ideas in the field of federated learning for healthcare\nLeader: I\'ll coordinate the generation of research ideas on federated learning for healthcare. Let me delegate tasks to our specialized agents...\n[... agents work in parallel ...]\nLeader: Here are the top 5 research ideas for federated learning in healthcare:\n1. [Idea 1 with score and details]\n2. [Idea 2 with score and details]\n...\n```\n\n## Configuration\n\n### Network Configuration\n\nEdit `network.yaml` to customize:\n- Network ports (HTTP: 8709, gRPC: 8609)\n- Agent groups and permissions\n- Mod configurations\n- Project templates\n\n### Agent Configuration\n\nEdit individual agent YAML files to customize:\n- Model selection\n- Instructions and behavior\n- Max iterations\n- Response patterns\n\n### Evaluation Configuration\n\nEdit the evaluation mod configuration in `network.yaml` to adjust:\n- Evaluation dimensions (novelty, feasibility, impact)\n- Weights for each dimension\n- Score ranges\n\n## Project Templates\n\nThe system includes two project templates:\n\n### Research Ideas Generation\n\nMain workflow for generating and evaluating research ideas with all agents participating.\n\n### Idea Refinement\n\nFocused workflow for refining and consolidating existing ideas.\n\n## Data Structure\n\n### Research Idea Format\n\n```json\n{\n  "title": "Research Idea Title",\n  "problem": "Problem statement",\n  "core_idea": "Core innovation",\n  "why_interesting": "Why this is interesting",\n  "potential_method": "Proposed methodology",\n  "challenges": "Potential challenges"\n}\n```\n\n### Evaluation Result Format\n\n```json\n{\n  "idea_id": "unique_id",\n  "idea_title": "Idea Title",\n  "scores": {\n    "technical_feasibility": 8.5,\n    "impact": 9.0,\n    "novelty": 7.5,\n    "relevance": 8.0,\n    "clarity": 9.0\n  },\n  "total_score": 8.4,\n  "strengths": ["Excellent impact", "Good technical feasibility"],\n  "weaknesses": ["Moderate novelty"],\n  "recommendations": ["Consider incorporating more innovative elements"]\n}\n```\n\n## Troubleshooting\n\n### Agents Not Connecting\n\n- Verify the network is running: `openagents network status`\n- Check network URL and port in agent configurations\n- Ensure passwords match between network and agents\n\n### Ideas Not Generated\n\n- Verify all generator agents are connected\n- Check Leader Agent logs for delegation errors\n- Ensure agent groups have correct permissions\n\n### Evaluation Not Working\n\n- Verify Evaluation Mod is loaded: Check network logs\n- Check mod configuration in `network.yaml`\n- Ensure mod path is correct: `demos.09_research_ideas_network.mods.evaluation`\n\n## Development\n\n### Adding New Generator Agents\n\n1. Create a new YAML file in `agents/` directory\n2. Follow the structure of existing generator agents\n3. Add the agent to the `generators` agent group in `network.yaml`\n4. Update Leader Agent instructions to include the new agent\n\n### Modifying Evaluation Criteria\n\nEdit the `evaluation_criteria` dictionary in `mods/evaluation/mod.py`:\n\n```python\nself.evaluation_criteria = {\n    "technical_feasibility": {"weight": 0.25, "description": "..."},\n    "impact": {"weight": 0.30, "description": "..."},\n    # Add or modify criteria here\n}\n```\n\n### Customizing Workflow\n\nModify the project templates in `network.yaml` to change the workflow steps, agent participation, or idea structure.\n\n## License\n\nThis project is part of the OpenAgents framework.\n\n## Contributing\n\nContributions are welcome! Please submit issues and pull requests to the OpenAgents repository.', 'network_profile': {'discoverable': True, 'name': 'Research Ideas Generator', 'description': 'A multi-agent system for generating and evaluating research ideas. Uses specialized generators, critics, and refinement to produce high-quality research proposals.', 'tags': ['research', 'ideas', 'multi-agent', 'collaboration', 'innovation'], 'categories': ['research', 'collaboration'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 15, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8709}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 60s, timeout: 300s)
